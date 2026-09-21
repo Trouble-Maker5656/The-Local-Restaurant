@@ -98,6 +98,38 @@ header .navbar {
     color: var(--primary-color);
     background: var(--scondary-color);
 }
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background: var(--white-color);
+    margin-top: 5px;
+    padding: 10px 0;
+    border-radius: var(--boder-radius-s);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.sub-menu .menu-list {
+    color: var(--dark-color);
+    display: block;
+    padding: 10px 20px;
+    font-size: var(--font-size-m);
+}
+
+@media (min-width: 901px) {
+    .nav-item:hover .sub-menu {
+        display: block;
+    }
+}
+
+.sub-menu .menu-list:hover{
+    border-radius: var(--boder-radius-m);
+    color: var(--primary-color);
+    background: var(--scondary-color);
+}
+
+
 .navbar :where(#close-menu, #open-menu){
         display: none;
         
@@ -175,6 +207,74 @@ header .navbar {
 
 }
 
+/* ====about section==== */
+.about-section{
+    padding: 120px 0;
+    background: var(--white-color);
+}
+
+.about-section .section-conten{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-section .about-image-wrapper .about-image{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: var(--boder-radius-circle);
+    
+}
+
+.section-title{
+    text-align: center;
+    font-size: var(--font-size-xxl);
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+}
+
+.section-title:after{
+    content:"";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--scondary-color);
+    margin: 20px auto 0;
+    border-radius: var(--boder-radius-s);
+}
+.section-conten .about-detail .section-title{
+    padding:0;
+}
+
+.section-conten .about-detail .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+    
+}
+
+.section-conten .about-detail{
+    max-width: 50%;
+}
+
+.social-link-lists{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link-lists .social-link{
+    color: var(--dark-color);
+    font-size: var(--font-size-l);
+    transition: 0.3s ease;
+}
+
+.social-link-lists .social-link:hover{
+    color: var(--scondary-color);
+}
 /* ====Respondsive media==== */
 @media screen and (max-width: 900px) {
     :root {
@@ -212,6 +312,7 @@ header .navbar {
         background: var(--white-color);
         transition: left 0.2s ease;
     }
+    
 
     body.show-mobile-menu .navbar .nav-menu{
         left: 0;
@@ -250,6 +351,24 @@ header .navbar {
     .section-conten .hero-image-wrapper{
         max-width: 300px;
         margin-right: 0;
+    }
+
+    .section-conten .hero-detail :is(.detail, .description), .about-section .about-detail{
+        max-width: 100%;
+    }
+
+    /*====About section mobile==== */
+    .about-section .section-conten{
+        gap: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 300px;
+        aspect-ratio: 1;
     }
 
 }
