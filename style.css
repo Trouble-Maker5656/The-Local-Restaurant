@@ -107,6 +107,10 @@ header .navbar {
     gap: 10px;
 }
 
+.mobile-logo {
+    display: none;
+}
+
 /* ====hero style==== */
 
 .hero-conten {
@@ -218,6 +222,34 @@ header .navbar {
         display: block;
         margin-top: 17px;
         font-size: var(--font-size-l);
+    }
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+    }
+    .mobile-logo .mobile-logo-text {
+        font-family: "Miniver", cursive;
+        color: var(--scondary-color);
+        font-size: var(--font-size-xxl);
+        font-weight: var(--font-weight-bold);
+    }
+
+    /* ====Hero section==== */
+    .hero-conten .section-conten{
+        gap: 50px;
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 30px 20px 20px;
+        justify-content: center;
+
+    }
+
+    .section-conten .hero-image-wrapper{
+        max-width: 300px;
+        margin-right: 0;
     }
 
 }
