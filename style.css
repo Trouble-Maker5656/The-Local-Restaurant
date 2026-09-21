@@ -156,7 +156,6 @@ header .navbar {
     min-height: 100vh;
     color: var(--white-color);
     justify-content: space-between;
-    margin-left: 50px;
 }
 
 .section-conten .hero-detail .title {

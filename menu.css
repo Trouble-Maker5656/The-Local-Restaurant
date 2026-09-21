@@ -1,0 +1,96 @@
+:root {
+    /* ====color==== */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #340c14;
+    --scondary-color: #fcab07;
+    --light-pink-color: #faf4f5;
+    --medium-grey: #ccc;
+
+    /* ====font size==== */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* ====font weight==== */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* ====boder radius==== */
+    --boder-radius-s: 8px;
+    --boder-radius-m: 30px;
+    --boder-radius-circle: 50%;
+
+    /* ====site max width==== */
+    --site-max-width: 1300px;
+}
+
+/* ====menu style==== */
+.menu-section {
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+.menu-section .menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-section .menu-list .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: calc((100% - 220px) / 3);
+}
+.menu-section .menu-list .menu-item > a {
+    display: block;
+    width: 100%;
+}
+.menu-section .section-conten .menu-list .menu-item .menu-image {
+    display: block;
+    width: 83%;
+    height: auto;
+    aspect-ratio: 1;
+    margin:0 auto 5px;
+    object-fit: contain;
+}
+
+.menu-section .menu-list .menu-item .name {
+    margin: 10px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+}
+
+.menu-section .menu-list .menu-item .description {
+    font-size: var(--font-size-m);
+    
+}
+
+.menu-section .menu-list .menu-item .price {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+}
+
+/* ====Responsive media queries for max width 1024px==== */
+@media screen and (max-width: 1024px) {
+    .menu-section .section-conten .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc((100% - 120px) / 3);
+    }
+
+
+}
