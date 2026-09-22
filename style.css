@@ -323,7 +323,7 @@ header .navbar {
 
 .testimonial-section .slider-button{
     color: var(--scondary-color);
-    margin-top: -50px
+    margin-top: -50px;
     transition: 0.3s ease;
 }
 
@@ -331,6 +331,33 @@ header .navbar {
     color: var(--primary-color);
 }
 
+.gallery-section{
+    padding: 50px 0 100px;
+    background: var(--white-color);
+}
+
+.gallery-section .gallery-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-section .gallery-list .gallery-item{
+    overflow: hidden;
+    border-radius: var(--boder-radius-s);
+    width: calc(100% / 3 - 10px)
+}
+
+.gallery-section .gallery-item .gallery-image{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-section .gallery-item:hover .gallery-image{
+   transform: scale(1.3)
+}
 /* ====Respondsive media==== */
 @media screen and (max-width: 900px) {
     :root {
@@ -427,10 +454,21 @@ header .navbar {
         aspect-ratio: 1;
     }
 
+    .gallery-section .gallery-list{
+        gap: 5px;
+    }
+
+    .gallery-section .gallery-list .gallery-item{
+        width: calc(100% / 2 - 5px);
+    }
+
 }
 
 @media screen and (max-width: 640px) {
     .testimonial-section .slider-wrapper{
         margin: 0 0px 50px;
+    }
+    .gallery-section .gallery-list .gallery-item{
+        width: 100%;
     }
 }    
