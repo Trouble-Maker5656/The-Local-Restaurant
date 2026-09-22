@@ -59,11 +59,15 @@
 }
 .menu-section .section-conten .menu-list .menu-item .menu-image {
     display: block;
-    width: 83%;
-    height: auto;
+    width: 60%;
     aspect-ratio: 1;
-    margin:0 auto 5px;
     object-fit: contain;
+    margin: 0 auto;
+}
+
+.menu-section .section-conten .menu-list .menu-item .menu-image:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 
 .menu-section .menu-list .menu-item .name {
@@ -89,8 +93,34 @@
     }
 
     .menu-section .menu-list .menu-item {
-        width: calc((100% - 120px) / 3);
+        width: calc(100% / 3 - 60px);
     }
 
 
+}
+
+@media screen and (max-width: 900px){
+     .menu-section .section-conten .menu-list {
+        gap: 40px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .menu-section .menu-list .menu-item .menu-image {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .menu-section .section-conten .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: 100%;
+    }
+    
+    
 }
