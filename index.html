@@ -1,314 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE LOCAL RESTARUANT</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- ====navbar==== -->
     <header>
-        <nav class="navbar section-conten">
-            <a href="#" class="nav-logo">
-                <h2 class="logo-text">The Local</h2>
-            </a>
+      <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">The Local</h2>
+        </a>
 
-            <ul class="nav-menu">
-                <button id="close-menu" class="fa-solid fa-xmark"></button>
-                <div class="mobile-logo">
-                    <p class="mobile-logo-text">The Local</p>
-                </div>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Menu</a>
-                    <ul class="sub-menu">
-                        <li><a href="#" class="menu-list">Appetizers</a></li>
-                        <li><a href="#" class="menu-list">Main Courses</a></li>
-                        <li><a href="#" class="menu-list">Desserts</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Account</a>
-                </li>
+        <ul class="nav-menu">
+          <button id="close-menu" class="fa-solid fa-xmark"></button>
+          <div class="mobile-logo">
+            <p class="mobile-logo-text">The Local</p>
+          </div>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Menu</a>
+            <ul class="sub-menu">
+              <li><a href="#" class="menu-list">Appetizers</a></li>
+              <li><a href="#" class="menu-list">Main Courses</a></li>
+              <li><a href="#" class="menu-list">Desserts</a></li>
             </ul>
-            <button id="open-menu" class="fa-solid fa-bars"></button>
-        </nav>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Account</a>
+          </li>
+        </ul>
+        <button id="open-menu" class="fa-solid fa-bars"></button>
+      </nav>
     </header>
     <main>
-        <!-- ====Hero section==== -->
-        <section class="hero-conten">
-            <div class="section-conten">
-                <div class="hero-detail">
-                    <h2 class="title">Our Signature Dishes</h2>
-                    <h3 class="detail">Taste Every Bite of Italy</h3>
-                    <p class="description">Classic pasta tossed in a rich, savory Bolognese sauce with tender ground
-                        beef,
-                        tomatoes, herbs, and Parmesan cheese.</p>
-                    <div class="buttons">
-                        <a href="#" class="button Order-now">Order Now</a>
-                        <a href="#" class="button see-more">See More</a>
-
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <img src="pic/pasta dishe.png" alt="hero" class="hero-image">
-                </div>
+      <!-- ====Hero section==== -->
+      <section class="hero-content">
+        <div class="section-content">
+          <div class="hero-detail">
+            <h2 class="title">Our Signature Dishes</h2>
+            <h3 class="detail">Taste Every Bite of Italy</h3>
+            <p class="description">
+              Classic pasta tossed in a rich, savory Bolognese sauce with tender
+              ground beef, tomatoes, herbs, and Parmesan cheese.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button Order-now">Order Now</a>
+              <a href="#" class="button see-more">See More</a>
             </div>
-        </section>
-        <!-- ====menu list==== -->
-        <section class="menu-section">
-            <h2 class="section-title">Our Menu</h2>
-            <div class="section-conten">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a href=""><img src="pic/classic chesse burger.png" alt="Classic Chesse Burger"
-                                class="menu-image"></a>
+          </div>
+          <div class="hero-image-wrapper">
+            <img src="pic/pasta dishe.png" alt="hero" class="hero-image" />
+          </div>
+        </div>
+      </section>
+      <!-- ====menu list==== -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/classic chesse burger.png"
+                  alt="Classic Chesse Burger"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Classic Cheese Burger</h3>
-                        <p class="description">A juicy beef patty topped with melted cheese, lettuce, tomato, and our
-                            special sauce.</p>
-                        <span class="price">$8.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/indian pani puri chaat.png" alt="Indian Pani Puri Chaat"
-                                class="menu-image"></a>
+              <h3 class="name">Classic Cheese Burger</h3>
+              <p class="description">
+                A juicy beef patty topped with melted cheese, lettuce, tomato,
+                and our special sauce.
+              </p>
+              <span class="price">$8.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/indian pani puri chaat.png"
+                  alt="Indian Pani Puri Chaat"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Indian Pani Puri Chaat</h3>
-                        <p class="description">Crispy hollow puris filled with spicy potato filling and tangy water.</p>
-                        <span class="price">$6.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/steamed siu mai dim sum.png" alt="Steamed Siu Mai Dim Sum"
-                                class="menu-image"></a>
+              <h3 class="name">Indian Pani Puri Chaat</h3>
+              <p class="description">
+                Crispy hollow puris filled with spicy potato filling and tangy
+                water.
+              </p>
+              <span class="price">$6.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/steamed siu mai dim sum.png"
+                  alt="Steamed Siu Mai Dim Sum"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Steamed Siu Mai Dim Sum</h3>
-                        <p class="description">Delicate dumplings filled with tender pork and shrimp, served steamed.
-                        </p>
-                        <span class="price">$7.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/mixed seafood platter.png" alt="Mixed Seafood Platter"
-                                class="menu-image"></a>
+              <h3 class="name">Steamed Siu Mai Dim Sum</h3>
+              <p class="description">
+                Delicate dumplings filled with tender pork and shrimp, served
+                steamed.
+              </p>
+              <span class="price">$7.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/mixed seafood platter.png"
+                  alt="Mixed Seafood Platter"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Mixed Seafood Platter</h3>
-                        <p class="description">A delightful assortment of fresh seafood, including shrimp, crab, and
-                            fish, served with our signature dipping sauce.</p>
-                        <span class="price">$14.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/spaghetti carbonara.png" alt="Spaghetti Carbonara"
-                                class="menu-image"></a>
+              <h3 class="name">Mixed Seafood Platter</h3>
+              <p class="description">
+                A delightful assortment of fresh seafood, including shrimp,
+                crab, and fish, served with our signature dipping sauce.
+              </p>
+              <span class="price">$14.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/spaghetti carbonara.png"
+                  alt="Spaghetti Carbonara"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Spaghetti Carbonara</h3>
-                        <p class="description">Creamy pasta dish with eggs, cheese, pancetta, and black pepper.</p>
-                        <span class="price">$12.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/pasta dishe.png" alt="Spaghetti Bolognese" class="menu-image"></a>
+              <h3 class="name">Spaghetti Carbonara</h3>
+              <p class="description">
+                Creamy pasta dish with eggs, cheese, pancetta, and black pepper.
+              </p>
+              <span class="price">$12.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/pasta dishe.png"
+                  alt="Spaghetti Bolognese"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Spaghetti Bolognese</h3>
-                        <p class="description">Classic Italian pasta dish with a rich, meaty tomato-based sauce.</p>
-                        <span class="price">$12.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/seafood spagetti.png" alt="Seafood Spaghetti" class="menu-image"></a>
+              <h3 class="name">Spaghetti Bolognese</h3>
+              <p class="description">
+                Classic Italian pasta dish with a rich, meaty tomato-based
+                sauce.
+              </p>
+              <span class="price">$12.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/seafood spagetti.png"
+                  alt="Seafood Spaghetti"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Seafood Spaghetti</h3>
-                        <p class="description">Delicious spaghetti tossed in a rich tomato-based sauce with a variety of
-                            fresh seafood.</p>
-                        <span class="price">$13.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/classic chesse cake.png" alt="Classic Cheese Cake"
-                                class="menu-image"></a>
+              <h3 class="name">Seafood Spaghetti</h3>
+              <p class="description">
+                Delicious spaghetti tossed in a rich tomato-based sauce with a
+                variety of fresh seafood.
+              </p>
+              <span class="price">$13.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/classic chesse cake.png"
+                  alt="Classic Cheese Cake"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Classic Cheese Cake</h3>
-                        <p class="description">Rich and creamy cheese cake with a buttery graham cracker crust.</p>
-                        <span class="price">$6.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/coconut brownie.png" alt="Coconut Brownie" class="menu-image"></a>
+              <h3 class="name">Classic Cheese Cake</h3>
+              <p class="description">
+                Rich and creamy cheese cake with a buttery graham cracker crust.
+              </p>
+              <span class="price">$6.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/coconut brownie.png"
+                  alt="Coconut Brownie"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Coconut Brownie</h3>
-                        <p class="description">Decadent chocolate brownie infused with coconut flavor and topped with a
-                            drizzle of coconut cream.</p>
-                        <span class="price">$5.99</span>
-                    </li>
-                    <li class="menu-item">
-                        <a href=""><img src="pic/dark chocolate cake.png" alt="Dark Chocolate Cake"
-                                class="menu-image"></a>
+              <h3 class="name">Coconut Brownie</h3>
+              <p class="description">
+                Decadent chocolate brownie infused with coconut flavor and
+                topped with a drizzle of coconut cream.
+              </p>
+              <span class="price">$5.99</span>
+            </li>
+            <li class="menu-item">
+              <a href=""
+                ><img
+                  src="pic/dark chocolate cake.png"
+                  alt="Dark Chocolate Cake"
+                  class="menu-image"
+              /></a>
 
-                        <h3 class="name">Dark Chocolate Cake</h3>
-                        <p class="description">Rich and indulgent cake made with dark chocolate and served with a dollop
-                            of whipped cream.</p>
-                        <span class="price">$5.99</span>
-                    </li>
+              <h3 class="name">Dark Chocolate Cake</h3>
+              <p class="description">
+                Rich and indulgent cake made with dark chocolate and served with
+                a dollop of whipped cream.
+              </p>
+              <span class="price">$5.99</span>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                </ul>
+      <!-- ====Feedback section==== -->
+      <section class="testimonials-section">
+        <h2 class="section-title">What Our Customer Say</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonial-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="pic/user1.jpg" alt="User" class="user-image" />
+                  <h2 class="name">John Handerson</h2>
+                  <i class="feedback">Great food and excellent service!</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="pic/user2.jpg" alt="User" class="user-image" />
+                  <h2 class="name">Sarah Johnson</h2>
+                  <i class="feedback">The best cake I've ever had!</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="pic/user3.png" alt="User" class="user-image" />
+                  <h2 class="name">Mike Davis</h2>
+                  <i class="feedback"
+                    >The atmosphere is wonderful and the staff is very
+                    friendly!</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="pic/user4.jpg" alt="User" class="user-image" />
+                  <h2 class="name">Emily Wilson</h2>
+                  <i class="feedback">The desserts are out of this world!</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="pic/user5.jpg" alt="User" class="user-image" />
+                  <h2 class="name">Brian Smith</h2>
+                  <i class="feedback"
+                    >I love the cozy atmosphere and the delicious food!</i
+                  >
+                </li>
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="slider-button swiper-button-prev"></div>
+              <div class="slider-button swiper-button-next"></div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- ====Feedback section==== -->
-        <section class="testimonial-section">
-            <h2 class="section-title">What Our Customers Say</h2>
-            <div class="section-content">
-                <div class="slider-container swiper">
-                    <div class="slider-wrapper">
-                        <ul class="testimonial-list swiper-wrapper">
-                            <li class="testimonial swiper-slide">
-                                <img src="pic/user1.jpg" alt="User" class="user-image">
-                                <h2 class="name">John Handerson</h2>
-                                <i class="feedback">Great food and excellent service!</i>
-                            </li>
-                            <li class="testimonial swiper-slide">
-                                <img src="pic/user2.jpg" alt="User" class="user-image">
-                                <h2 class="name">Sarah Johnson</h2>
-                                <i class="feedback">The best cake I've ever had!</i>
-                            </li>
-                            <li class="testimonial swiper-slide">
-                                <img src="pic/user3.png" alt="User" class="user-image">
-                                <h2 class="name">Mike Davis</h2>
-                                <i class="feedback">The atmosphere is wonderful and the staff is very friendly!</i>
-                            </li>
-                            <li class="testimonial swiper-slide">
-                                <img src="pic/user4.jpg" alt="User" class="user-image">
-                                <h2 class="name">Emily Wilson</h2>
-                                <i class="feedback">The desserts are out of this world!</i>
-                            </li>
-                            <li class="testimonial swiper-slide">
-                                <img src="pic/user5.jpg" alt="User" class="user-image">
-                                <h2 class="name">Brian Smith</h2>
-                                <i class="feedback">I love the cozy atmosphere and the delicious food!</i>
-                            </li>
-                        </ul>
-                        <div class="swiper-pagination"></div>
-                        <div class="slider-button swiper-button-prev"></div>
-                        <div class="slider-button swiper-button-next"></div>
-                    </div>
-                </div>
+      <!-- ====Gallery section==== -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="pic/image/image1.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image2.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image3.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image9.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image4.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image5.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image6.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image7.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="pic/image/image8.jpg"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ====About section==== -->
+
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="pic/about us.webp" alt="About Us" class="about-image" />
+          </div>
+          <div class="about-detail">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">
+              At The Local, we believe great food brings people together. We
+              serve fresh, delicious dishes made with quality ingredients and a
+              touch of passion. Our goal is to create a warm and welcoming place
+              where everyone can enjoy good food, good drinks, and good moments.
+              Whether you're here for a quick meal, a dinner with friends, or a
+              special occasion, The Local is a place to feel at home.
+            </p>
+            <div class="social-link-lists">
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- ====Gallery section==== -->
-         <section class="gallery-section">
-            <h2 class="section-title">Gallery</h2>
-            <div class="section-conten">
-                <ul class="gallery-list">
-                    <li class="gallery-item">
-                        <img src="pic/image/image1.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image2.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image3.jpg" alt="Gallery" class="gallery-image">
-                    </li><li class="gallery-item">
-                        <img src="pic/image/image9.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image4.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image5.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image6.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image7.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                     <li class="gallery-item">
-                        <img src="pic/image/image8.jpg" alt="Gallery" class="gallery-image">
-                    </li>
-                </ul>
+      <!-- ====contact us==== -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>
+                #128ABC, St.110 (Confederation Russian Blvd) S/K Tuek Laak I,
+                Khan Toul Kok
+              </p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@thelocalwebsite.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(123) 456 789</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-clock"></i>
+              <p>Monday - Saturday: 7:30 AM - 10:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.thelocalrestaurant.kh</p>
+            </li>
+          </ul>
+          <form action="#" class="contact-form">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="form-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Your email"
+              class="form-input"
+              required
+            />
+            <textarea
+              placeholder="Your message"
+              class="form-input"
+              required
+            ></textarea>
+            <button class="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- ====Footer Section====    -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2026 Cambodia Restaurant</p>
+          <div class="social-link-list">
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x"></i></a>
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          
+            <div class="policy-list">
+
+                <p class="policy-text">
+                  <a href="#" class="policy-link">Privacy Poicy</a>
+                </p>
+                <span class="separator">●</span>
+                <p class="policy-text">
+                  <a href="#" class="policy-link">Refund Poicy</a>
+                </p>
             </div>
-        </section>
-
-        <!-- ====About section==== -->
-
-        <section class="about-section">
-            <div class="section-conten">
-                <div class="about-image-wrapper">
-                    <img src="pic/about us.webp" alt="About Us" class="about-image">
-                </div>
-                <div class="about-detail">
-                    <h2 class="section-title">About Us</h2>
-                    <p class="text">At The Local, we believe great food brings people together. We serve fresh,
-                        delicious dishes made with quality ingredients and a touch of passion. Our goal is to create a
-                        warm and welcoming place where everyone can enjoy good food, good drinks, and good moments.
-
-                        Whether you're here for a quick meal, a dinner with friends, or a special occasion, The Local is
-                        a place to feel at home.</p>
-                    <div class="social-link-lists">
-                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-x"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- ====contact us==== -->
-         <section class="contact-section">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="section-content">
-                <ul class="contact-info-list">
-                    <li class="contact-info">
-                        <i class="fa-solid fa-location-crosshairs"></i>
-                        <p>#128ABC, St.110 (Confederation Russian Blvd) S/K Tuek Laak I, Khan Toul Kok</p>
-                    </li>
-                     <li class="contact-info">
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>info@thelocalwebsite.com</p>
-                    </li>
-                     <li class="contact-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>(123) 456 789</p>
-                    </li>
-                     <li class="contact-info">
-                        <i class="fa-solid fa-clock"></i>
-                        <p>Monday - Saturday: 7:30 AM - 10:00 PM</p>
-                    </li>
-                     <li class="contact-info">
-                        <i class="fa-solid fa-clock"></i>
-                        <p>Sunday: Closed</p>
-                    </li>
-                     <li class="contact-info">
-                        <i class="fa-solid fa-globe"></i>
-                        <p>www.thelocalrestaurant.kh</p>
-                    </li>
-                </ul>
-                <form action="#" class="contact-form">
-                    <input type="text" placeholder="Your name" class="form-input" required>
-                    <input type="email" placeholder="Your email" class="form-input" required>
-                    <textarea placeholder="Your message" class="form-input" required></textarea>
-                    <button class="submit-button">Submit</button>
-                </form>
-            </div>
-         </section>
+    
+        </div>
+      </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- ====custom script====  -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
