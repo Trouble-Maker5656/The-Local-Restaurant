@@ -34,7 +34,7 @@
 .menu-section {
     color: var(--white-color);
     background: var(--dark-color);
-    padding: 50px 100px 0;
+    padding: 30px 70px 0;
 }
 
 .menu-section .menu-list {
@@ -113,12 +113,12 @@
     }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 575.98px){
     .menu-section .section-content .menu-list {
-        gap: 60px;
+        gap: 40px;
     }
 
-    .menu-section .menu-list .menu-item {
+    .menu-section .menu-list .menu-item{
         width: 100%;
     }
     

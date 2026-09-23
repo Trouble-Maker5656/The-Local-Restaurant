@@ -196,13 +196,17 @@ header .navbar {
     border-color: var(--white-color);
     background: transparent;
 }
-
-.section-content .hero-detail .see-more:hover {
+.section-content .hero-detail .see-more:hover{
     color: var(--primary-color-color);
     border-color: var(--scondary-color);
     background: var(--scondary-color);
 }
 
+.section-content .hero-detail .Order-now:hover{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
 .section-content .hero-image-wrapper {
     max-width: 500px;
     margin-right: 30px;
@@ -583,8 +587,8 @@ header .navbar {
 }
 
 @media screen and (max-width: 640px) {
-    .testimonial-section .slider-wrapper{
-        margin: 0 0px 50px;
+    .testimonials-section .slider-wrapper{
+        margin: 0 0px 30px;
     }
     .gallery-section .gallery-list .gallery-item{
         width: 100%;
