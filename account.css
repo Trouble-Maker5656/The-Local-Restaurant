@@ -262,7 +262,7 @@ body{
 }
 
 .divider::before,
-.divoder::after{
+.divider::after{
     content: "";
     flex: 1;
     height: 1px;
