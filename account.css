@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Miniver&family=Moulpali&family=Rye&display=swap');
+:root {
+    /* ====color==== */
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #340c14;
+    --scondary-color: #fcab07;
+    --light-pink-color: #faf4f5;
+    --medium-grey: #ccc;
+
+    /* ====font size==== */
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* ====font weight==== */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* ====boder radius==== */
+    --boder-radius-s: 8px;
+    --boder-radius-m: 30px;
+    --boder-radius-circle: 50%;
+
+    /* ====site max width==== */
+    --site-max-width: 1300px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+h
+body{
+    min-height: 100vh;
+    display: flex;
+}
+
+.account-shell{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ====Left Visual==== */
+.account-visual{
+    position: relative;
+    padding: 56px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white-color);
+    background: 
+    linear-gradient(160deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .25) 55%, rgba(0, 0, 0, .65)),
+    url(pic/image/account.jpg) center/cover;
+
+}
+
+.account-brand h1{
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    font-family: "Miniver", cursive;
+    letter-spacing: -1.5px;
+    margin-bottom: 14px;
+    
+}
+
+.account-brand p{
+    font-size: var(--font-size-l);
+    font-weight:300;
+    max-width: 320px;
+    opacity: .9;
+    line-height: -1.5px;
+
+}
+
+.account-quote{
+    background: var(--light-pink-color);
+    backdrop-filter: blur(6px);
+    border-radius: var(--boder-radius-m);
+    padding: 22px 24px;
+    max-width: 420px;
+    box-shadow:  0 20px 50px rgba(0, 0, 0, .12);
+}
+
+.account-quote blockquote{
+    font-style: italic;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    color: var(--dark-color);
+    margin-bottom: 14px;
+}
+
+.account-quote .quote-author{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: .90rem;
+    color: grey
+
+}
+
+.account-quote .author-dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--scondary-color);
+    flex: none;
+}
+
+/* ====Right Visual==== */
+.account-form-panel{
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.account-form{
+    width: 100%;
+    max-width: 420px;
+}
+
+.account-form .form-head h2{
+    font-size: 1.9rem;
+    letter-spacing: -.5px;
+    margin-bottom: 6px;
+    color: var(--white-color);
+}
+
+.account-form .form-head p{
+    color: rgb(180, 171, 171);
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* ====Field==== */
+.field{
+    margin-bottom: 18px;
+}
+.field label{
+    display: block;
+    font-size: -.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--white-color);
+}
+
+.field input{
+    width: 100%;
+    border: 1px solid rgb(226, 223, 223);
+    background: var(--white-color);
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-family: inherit;
+    color: var(--dark-color);
+    outline: none;
+    font-size: .95rem;
+    transition: .18s;
+
+}
+
+.field input ::placeholder{
+    color: #9a9a9a;
+}
+.field input:focus{
+    border-color: var(--scondary-color);
+    background: var(--white-color);
+
+}
+
+/* ====Password Field==== */
+.password-wrap{
+    position: relative;
+}
+.password-wrap input{
+    padding-right: 46px;
+}
+.toggle-pass{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: gray;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 4px;
+    line-height: 0;
+}
+.toggle-pass:hover{
+    color: var(--scondary-color);
+}
+
+/* ====Remember me check box==== */
+.form-aux{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 4px 0 22px;
+    font-size: .88rem;
+    color: var(--white-color);
+}
+
+.form-aux input[type="checkbox"]{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    color: var(--scondary-color);
+    flex: none; 
+}
+
+.form-aux a{
+    color: var(--scondary-color);
+    font-weight:600;
+    text-decoration: none;
+}
+.form-aux a:hover{
+    text-decoration: underline;
+}
+.form-aux .spacer{
+    margin-left: auto;
+}
+
+/* ====Submit button==== */
+.btn-block{
+    width: 100%;
+    background: var(--scondary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-block:hover{
+    background: var(--white-color);
+    color: var(--dark-color);
+}
+
+/* ====Divider==== */
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 26px 0;
+    font-size: .88rem;
+    color: grey;
+}
+
+.divider::before,
+.divoder::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: grey;
+}
+/* ====social==== */
+.social-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid var(--white-color);
+    background: #fff;
+    border-radius: 12px;
+    padding: 13px;
+    font-size: .95rem;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    font-family: inherit;
+    transition: .18s;
+}
+.social-btn:hover { border-color: var(--scondary-color); background: #fdf6f3; }
+.social-btn .g-icon {
+    font-weight: 800;
+    background: conic-gradient(from -45deg, #ea4335 0 25%, #fbbc05 0 50%, #34a853 0 75%, #4285f4 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.form-switch {
+    text-align: center;
+    margin-top: 28px;
+    font-size: .92rem;
+    color: grey;
+}
+.form-switch button {
+    border: none;
+    background: transparent;
+    color: var(--scondary-color);
+    font-weight: 700;
+    font-size: .92rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+.form-switch button:hover { text-decoration: underline; }

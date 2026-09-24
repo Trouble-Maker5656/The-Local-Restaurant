@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Local — Sign In / Create Account</title>
+    <link rel="stylesheet" href="account.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="account-shell">
+      <!-- ====Left Visual==== -->
+      <aside class="account-visual">
+        <div class="account-brand">
+          <h1>The Local</h1>
+          <p>Experience gastronomy delivered with precision and passion.</p>
+        </div>
+        <figure class="account-quote">
+          <blockquote>
+            "A recipe has no soul. You, as the cook, must bring soul to the
+            recipe."
+          </blockquote>
+          <figcaption class="quote-author">
+            <span class="author-dot"></span>
+            - Executive Chef Thomas Keller
+          </figcaption>
+        </figure>
+      </aside>
+
+      <!-- ====Right Visual==== -->
+      <main class="account-form-panel">
+        <!-- ====Login Form==== -->
+        <form class="account-form" id="LoginForm">
+          <div class="form-head">
+            <h2>Welcome Back</h2>
+            <p>Sign in to continue your culinary journey</p>
+          </div>
+
+          <div class="field">
+            <label for="log-user">Username</label>
+            <input
+              type="text"
+              id="log-user"
+              placeholder="Enter your username"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="field">
+            <label for="log-pass">Password</label>
+            <div class="password-wrap">
+              <input
+                type="password"
+                id="log-pass"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+              />
+              <button
+                type="button"
+                class="toggle-pass"
+                aria-label="Show password"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-aux">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+            <a href="#" class="spacer">Forgot password</a>
+          </div>
+
+          <button type="submit" class="btn-block">Login</button>
+          <div class="divider">Or continue with</div>
+
+          <div class="social-row">
+            <button type="button" class="social-btn">
+              <span class="g-icon">G</span> Google
+            </button>
+            <button type="button" class="social-btn">
+              <i class="fa-brands fa-apple"></i> Apple
+            </button>
+          </div>
+          <p class="form-switch">
+            Don't have an account <Button type="button">Sign Up</Button>
+          </p>
+        </form>
+      </main>
+    </div>
+  </body>
+  <script>
+    const pwd = document.getElementById('log-pass');
+const showPwd = document.querySelector('.toggle-pass');
+{
+  showPwd.addEventListener('click', function () {
+    const isHidden = pwd.type === 'password';
+    if (isHidden) {
+      pwd.type = 'text';
+    } else {
+      pwd.type = 'password';
+    }
+  });
+
+}
+  </script>
+</html>
