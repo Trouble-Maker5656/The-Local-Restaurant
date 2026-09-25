@@ -215,7 +215,7 @@ body{
     width: 17px;
     height: 17px;
     cursor: pointer;
-    color: var(--scondary-color);
+    accent-color: var(--scondary-color);
     flex: none; 
 }
 
@@ -314,3 +314,25 @@ body{
     cursor: pointer;
 }
 .form-switch button:hover { text-decoration: underline; }
+/* ====Respondsive Media==== */
+@media screen and (max-width: 900px){
+    :root {
+        --font-size-m: 1rem;
+        --font-size-l: 1.3rem;
+        --font-size-xl: 1.5rem;
+        --font-size-xxl: 1.8rem;}
+    .account-shell {
+        display: flex;
+        flex-direction: column;
+
+    }  
+    
+     .account-shell .account-visual .account-brand{
+        margin-bottom: 10px;
+     }
+
+     .account-form {
+        padding: 30px 10px;
+     }
+
+}
